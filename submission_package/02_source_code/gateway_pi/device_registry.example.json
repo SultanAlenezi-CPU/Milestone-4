@@ -1,0 +1,11 @@
+{
+  "_comment": "Example device registry for Proposed Gateway Service. Copy to device_registry.json and replace tokens before a real session. device_registry.json is gitignored.",
+  "devices": {
+    "esp32_01": {
+      "device_token": "proposed_dev_token_esp32_01_a1b2c3d4e5f6"
+    },
+    "esp32_02": {
+      "device_token": "proposed_dev_token_esp32_02_f6e5d4c3b2a1"
+    }
+  }
+}
