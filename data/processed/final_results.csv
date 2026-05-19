@@ -1,0 +1,26 @@
+run_id,baseline,latency_ms,heap_delta,http_status,result,notes
+1,B1,210,3200,200,PASS,health check
+2,B1,195,3100,200,PASS,health check
+3,B1,220,3150,200,PASS,health check
+4,B1,205,3000,200,PASS,health check
+5,B1,198,3050,200,PASS,health check
+6,B3,1075,3776,200,PASS,CSR enroll
+7,B3,1083,-436,200,PASS,CSR enroll
+8,B3,1654,3864,200,PASS,CSR enroll
+9,B3,1051,4012,200,PASS,CSR enroll
+10,B3,1124,3648,200,PASS,CSR enroll
+11,B1,965,3840,200,PASS,b1_live_rerun_2026-04-05_hotspot_HUAWEI-B315-58AD
+12,B1,1765,-436,200,PASS,b1_live_rerun_2026-04-05_hotspot_HUAWEI-B315-58AD
+13,B1,1325,-420,200,PASS,b1_live_rerun_2026-04-05_hotspot_HUAWEI-B315-58AD
+14,B1,1281,-616,200,PASS,b1_live_rerun_2026-04-05_hotspot_HUAWEI-B315-58AD
+15,B1,2980,-596,200,PASS,b1_live_rerun_2026-04-05_hotspot_HUAWEI-B315-58AD
+16,B3,1782,3748,200,PASS,b3_live_rerun_2026-04-05_hotspot_HUAWEI-B315-58AD
+17,B3,1142,-428,200,PASS,b3_live_rerun_2026-04-05_hotspot_HUAWEI-B315-58AD
+18,B3,1554,-416,200,PASS,b3_live_rerun_2026-04-05_hotspot_HUAWEI-B315-58AD
+19,B3,1147,-416,200,PASS,b3_live_rerun_2026-04-05_hotspot_HUAWEI-B315-58AD
+20,B3,1251,-416,200,PASS,b3_live_rerun_2026-04-05_hotspot_HUAWEI-B315-58AD
+21,Proposed,1999,-13860,200,PASS,proposed_p5_2026-04-07_gateway_two_phase
+22,Proposed,1995,-14380,200,PASS,proposed_p5_2026-04-07_gateway_two_phase
+23,Proposed,1998,-14388,200,PASS,proposed_p5_2026-04-07_gateway_two_phase
+24,Proposed,1991,-14380,200,PASS,proposed_p5_2026-04-07_gateway_two_phase
+25,Proposed,2002,-16912,200,PASS,proposed_p5_2026-04-07_gateway_two_phase

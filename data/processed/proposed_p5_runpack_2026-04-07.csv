@@ -1,0 +1,6 @@
+external_seq,internal_fw_run_id,auth_latency_ms,csr_gen_ms,enroll_latency_ms,total_latency_ms,heap_before,heap_after,heap_delta,http_status_auth,http_status_enroll,cert_received,result
+1,1,74,680,1232,1999,217760,203900,-13860,200,200,1,PASS
+2,1,105,674,1205,1995,217692,203312,-14380,200,200,1,PASS
+3,1,327,706,955,1998,217700,203312,-14388,200,200,1,PASS
+4,1,114,704,1162,1991,217696,203316,-14380,200,200,1,PASS
+5,1,90,692,1209,2002,217700,200788,-16912,200,200,1,PASS

@@ -1,0 +1,924 @@
+Executing action: monitor
+Running idf_monitor in directory /home/iot_onboarding/esp_projects/baseline3_enroll
+Executing "/home/iot_onboarding/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/iot_onboarding/esp-idf-v5.5.3/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/iot_onboarding/esp_projects/baseline3_enroll/build/http_request.elf /home/iot_onboarding/esp_projects/baseline3_enroll/build/bootloader/bootloader.elf -m '/home/iot_onboarding/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/iot_onboarding/esp-idf-v5.5.3/tools/idf.py' '-p' '/dev/ttyUSB0'"...
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+done=5
+ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  4 2026 19:17:04[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19738h (104248) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00029760 vaddr=3ffb0000 size=04348h ( 17224) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002dab0 vaddr=40080000 size=02568h (  9576) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8be98h (573080) map[0m
+[0;32mI (329) esp_image: segment 4: paddr=000bbec0 vaddr=40082568 size=15a90h ( 88720) load[0m
+[0;32mI (364) esp_image: segment 5: paddr=000d1958 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (376) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (376) boot: Disabling RNG early entropy source...[0m
+[0;32mI (386) cpu_start: Multicore app[0m
+[0;32mI (394) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (395) cpu_start: Pro cpu start user code[0m
+[0;32mI (395) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (397) app_init: Application information:[0m
+[0;32mI (400) app_init: Project name:     http_request[0m
+[0;32mI (405) app_init: App version:      1[0m
+[0;32mI (408) app_init: Compile time:     Mar  4 2026 19:16:44[0m
+[0;32mI (413) app_init: ELF file SHA256:  76af5f8f1...[0m
+[0;32mI (417) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (421) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (425) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (429) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (433) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (439) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (444) heap_init: At 3FFB8B78 len 00027488 (157 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (455) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40098000 len 00008000 (32 KiB): IRAM[0m
+[0;33mW (467) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (479) spi_flash: detected chip: generic[0m
+[0;32mI (482) spi_flash: flash io: dio[0m
+[0;33mW (485) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (498) main_task: Started on CPU0[0m
+[0;32mI (508) main_task: Calling app_main()[0m
+[0;32mI (518) example_connect: Start example_connect.[0m
+[0;32mI (528) wifi:wifi driver task: 3ffc06c4, prio:23, stack:6656, core=0[0m
+[0;32mI (528) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (528) wifi:wifi certification version: v7.0[0m
+[0;32mI (528) wifi:config NVS flash: enabled[0m
+[0;32mI (528) wifi:config nano formatting: disabled[0m
+[0;32mI (538) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (538) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (548) wifi:Init management short buffer num: 32[0m
+[0;32mI (548) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (558) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (558) wifi:Init static rx buffer num: 10[0m
+[0;32mI (558) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (568) wifi_init: rx ba win: 6[0m
+[0;32mI (568) wifi_init: accept mbox: 6[0m
+[0;32mI (568) wifi_init: tcpip mbox: 32[0m
+[0;32mI (578) wifi_init: udp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp tx win: 5760[0m
+[0;32mI (578) wifi_init: tcp rx win: 5760[0m
+[0;32mI (588) wifi_init: tcp mss: 1440[0m
+[0;32mI (588) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (588) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (598) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (678) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (748) wifi:mode : sta (00:70:07:17:c4:b4)[0m
+[0;32mI (748) wifi:enable tsf[0m
+[0;32mI (748) example_connect: Connecting to Ahmed...[0m
+[0;33mW (758) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (758) example_connect: Waiting for IP(s)[0m
+[0;32mI (3418) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3418) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3428) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3438) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3468) wifi:connected with Ahmed, aid = 1, channel 6, BW20, bssid = 06:b2:cd:44:8e:14[0m
+[0;32mI (3468) wifi:security: WPA2-PSK, phy: bgn, rssi: -63[0m
+[0;32mI (3478) wifi:pm start, type: 1[0m
+
+[0;32mI (3478) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3498) wifi:<ba-add>idx:0 (ifx:0, 06:b2:cd:44:8e:14), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3548) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3548) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  4 2026 19:17:04[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19738h (104248) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00029760 vaddr=3ffb0000 size=04348h ( 17224) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002dab0 vaddr=40080000 size=02568h (  9576) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8be98h (573080) map[0m
+[0;32mI (329) esp_image: segment 4: paddr=000bbec0 vaddr=40082568 size=15a90h ( 88720) load[0m
+[0;32mI (364) esp_image: segment 5: paddr=000d1958 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (376) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (376) boot: Disabling RNG early entropy source...[0m
+[0;32mI (386) cpu_start: Multicore app[0m
+[0;32mI (394) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (395) cpu_start: Pro cpu start user code[0m
+[0;32mI (395) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (397) app_init: Application information:[0m
+[0;32mI (400) app_init: Project name:     http_request[0m
+[0;32mI (405) app_init: App version:      1[0m
+[0;32mI (408) app_init: Compile time:     Mar  4 2026 19:16:44[0m
+[0;32mI (413) app_init: ELF file SHA256:  76af5f8f1...[0m
+[0;32mI (417) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (421) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (425) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (429) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (433) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (439) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (444) heap_init: At 3FFB8B78 len 00027488 (157 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (455) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40098000 len 00008000 (32 KiB): IRAM[0m
+[0;33mW (467) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (479) spi_flash: detected chip: generic[0m
+[0;32mI (482) spi_flash: flash io: dio[0m
+[0;33mW (485) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (498) main_task: Started on CPU0[0m
+[0;32mI (508) main_task: Calling app_main()[0m
+[0;32mI (518) example_connect: Start example_connect.[0m
+[0;32mI (528) wifi:wifi driver task: 3ffc06c4, prio:23, stack:6656, core=0[0m
+[0;32mI (528) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (528) wifi:wifi certification version: v7.0[0m
+[0;32mI (528) wifi:config NVS flash: enabled[0m
+[0;32mI (528) wifi:config nano formatting: disabled[0m
+[0;32mI (538) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (538) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (548) wifi:Init management short buffer num: 32[0m
+[0;32mI (548) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (558) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (558) wifi:Init static rx buffer num: 10[0m
+[0;32mI (558) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (568) wifi_init: rx ba win: 6[0m
+[0;32mI (568) wifi_init: accept mbox: 6[0m
+[0;32mI (568) wifi_init: tcpip mbox: 32[0m
+[0;32mI (578) wifi_init: udp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp tx win: 5760[0m
+[0;32mI (578) wifi_init: tcp rx win: 5760[0m
+[0;32mI (588) wifi_init: tcp mss: 1440[0m
+[0;32mI (588) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (588) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (598) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (678) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (708) wifi:mode : sta (00:70:07:17:c4:b4)[0m
+[0;32mI (708) wifi:enable tsf[0m
+[0;32mI (708) example_connect: Connecting to Ahmed...[0m
+[0;33mW (708) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (718) example_connect: Waiting for IP(s)[0m
+[0;32mI (3378) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3378) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3388) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3448) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3628) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (3628) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3628) example_connect: Wi-Fi disconnected 2, trying to reconnect...[0m
+[0;32mI (6048) example_connect: Wi-Fi disconnected 205, trying to reconnect...[0m
+[0;32mI (8458) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8458) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8468) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8468) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8498) wifi:connected with Ahmed, aid = 1, channel 6, BW20, bssid = 06:b2:cd:44:8e:14[0m
+[0;32mI (8498) wifi:security: WPA2-PSK, phy: bgn, rssi: -66[0m
+[0;32mI (8498) wifi:pm start, type: 1[0m
+
+[0;32mI (8498) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8518) wifi:<ba-add>idx:0 (ifx:0, 06:b2:cd:44:8e:14), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8558) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8558) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9518) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (9568) esp_netif_handlers: example_netif_sta ip: 192.168.55.6, mask: 255.255.255.0, gw: 192.168.55.239[0m
+[0;32mI (9568) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.55.6[0m
+[0;32mI (9568) example_common: Connected to example_netif_sta[0m
+[0;32mI (9578) example_common: - IPv4 address: 192.168.55.6,[0m
+[0;32mI (9578) example_common: - IPv6 address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+Generating CSR...
+[0;32mI (9918) main_task: Returned from app_main()[0m
+CSR generated
+[0;32mI (10058) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (10058) example: ... allocated socket[0m
+[0;32mI (10118) example: ... connected[0m
+[0;32mI (10118) example: ... socket send success[0m
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.6 Python/3.12.3
+Date: Wed, 04 Mar 2026 16:41:11 GMT
+Content-Type: application/json
+Content-Length: 3378
+Connection: close
+
+{"ca_cert_pem":"-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----\n","device_cert_pem":"-----BEGIN CERTIFICATE-----\nMIIDRDCCASygAwIBAgIUXzkIVmRRcUyyWNsJ8nyxYu7u6lgwDQYJKoZIhvcNAQEL\nBQAwcDELMAkGA1UEBhMCU0ExDzANBgNVBAgMBlJpeWFkaDEPMA0GA1UEBwwGUml5\nYWRoMRswGQYDVQQKDBJJb1QtT25ib2FyZGluZy1MYWIxCzAJBgNVBAsMAkNBMRUw\nEwYDVQQDDAxMb2NhbC1Jb1QtQ0EwHhcNMjYwMzA0MTY0MDExWhcNMjcwMzA0MTY0\nMTExWjATMREwDwYDVQQDDAhlc3AzMl8wMTBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABF2+xAiPZ50gXevNXC/uQPH9SGDbHDb2RgzRnI8lQ3UlmLpPv2+vI2SZP8Ue\nvAu/GVWiRTmq5KL2NqBVQXk9dekwDQYJKoZIhvcNAQELBQADggIBAEXmjfQBsOqn\npxY1GbcU5+Em/D68zgW9FAAmvox3iuK8Ax3DUGUFOeGwmrZqEDJPhHOPeuq1Dyz6\nS2O2aysRCKCAlzSU2yXjASdU4byQ2pbTjJg3TjfdCvZkoNwuZ5mY+xVUc5CtMPWc\nQtCuIbG48Z64r32OB2dn8a9XBb5GlzNPboBzLTGFiOKKUNlTOTkWFsZgELsOq6Gi\nZq5pk9eukr5e4tuCSQ/d5cRZWEfCUIAOUlSp+JMh8Kc/JA+BNiDqCg+6OU5Qrs0O\nnnkG2JEfxQe8HtWvY8lCU+r/FjmCjUJZPjsPWCiJdRyj3N2e1uzy09Vq6eiQhi9A\n0QhxhIrR/mjtkWzEHV7BU5w5GCyB+J68YqvCkdFxeQxrJ09eTOgpjtGRSGmk5LDJ\nWPf2PNOShh3AHJPCnPNQIqJFudxZTOQyhISz6V3QoPX0B26knRTgVvx6qYAXhLjo\ndVGoXJde8zvzjSbDtlkKTg0N0l6wY2Zwyn4pbd3mbAebHr6tOvvLDRM0WEGUUnR3\n1ngMb9flWip9Q9EEKha7zfKda1yf/9jBtZcAilUw9SgU/LcQTIXyXRKI4Drbw2Rb\n49nHdMmj5/lQiSRCj4rUl++zHUco9b+lpnVpdaJdYLla3leS5yjoXHHDS7HP9pdw\nrsAiq1hBzKWPZ6WGdUYHGMNeS1rnUTRK\n-----END CERTIFICATE-----\n","device_id":"esp32_01","run_id":"1"}
+MEASURE run_id=1 heap_before=201228 heap_after=205004 heap_delta=3776 start_ms=9131 end_ms=10206 latency_ms=1075 http_status=200
+[0;32mI (10678) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (11518) example_connect: Got IPv6 event: Interface "example_netif_sta" address: 2a02:09b0:0040:a915:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_GLOBAL[0m
+Generating CSR...
+CSR generated
+[0;32mI (12648) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (12648) example: ... allocated socket[0m
+[0;32mI (12658) example: ... connected[0m
+[0;32mI (12658) example: ... socket send success[0m
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.6 Python/3.12.3
+Date: Wed, 04 Mar 2026 16:41:13 GMT
+Content-Type: application/json
+Content-Length: 3378
+Connection: close
+
+{"ca_cert_pem":"-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----\n","device_cert_pem":"-----BEGIN CERTIFICATE-----\nMIIDRDCCASygAwIBAgIUKcxw6HR1vg5/p2pljHVgOFaF0k8wDQYJKoZIhvcNAQEL\nBQAwcDELMAkGA1UEBhMCU0ExDzANBgNVBAgMBlJpeWFkaDEPMA0GA1UEBwwGUml5\nYWRoMRswGQYDVQQKDBJJb1QtT25ib2FyZGluZy1MYWIxCzAJBgNVBAsMAkNBMRUw\nEwYDVQQDDAxMb2NhbC1Jb1QtQ0EwHhcNMjYwMzA0MTY0MDEzWhcNMjcwMzA0MTY0\nMTEzWjATMREwDwYDVQQDDAhlc3AzMl8wMTBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABDLa4mSI05SUW1WtpJ33Oyn3xDHhq78ghYYQqXX2DaRoPFRxs88ITwEQjF3E\nseu4nmfCJHLU6ZupDSXJAuFV4oIwDQYJKoZIhvcNAQELBQADggIBAE16YzihCvv3\ndsw+IrrcCmZnQtEOtzoMoqtlawf+P0FFTVs/Au6nbMcBDRW4XyMw5rWxl+/MQcO5\nM2iLC41yjlJZNstxv0OcWZVG9dsLkzxtIm/P7TAVKfk4kkMmzN+CXvKf8rFH+6bV\nKvP1MjsoKxdw1ptX3Ht6frsMQTxU4qmowmp4NNNqMQ+iCvjNZe3DlENJcLV0iFEP\nz1ZRuHF74lvLf1OOz1N2EMjnGnmk4i+1ow+XM6GMONX20LsmuGnFKWxjMzc0vUex\nGlZkpp5Kr3wZNUaSxtqnzPmzppqIsuLiMbYXS01jGwEwp+l/v24Okl6Vghd1Ttwt\nQQeW8yXMy1y0G2AwXMVJu4de+Lu3LllkrfMWZz1qTelOnxezy3U2iW36K6mbGjmW\nqa6kG344bc6k0ZRa1XlaHSGkWSbFjj4CScdEdqHrwFr6DfsDqjB9UTBZ/+2PfIg/\nioNHzebxJXgkr8sRM+5eaCSHcDJM7cImuDhREmZk7TEpwXRoCBReAt5+IQixYsbv\nUq/t/7Zh4a5Gax2ae0Q5j3XtYW4RzPS1S7kKqsxvX815kmMw6DNataY7ZquJ+teW\nouURvAMJM3dMGQUyGdmhIwD2gEx+x6e3p/jEQphdQZ/1oQEaVkdvK4sJTm+a+BQa\nJ17zdsHZnLN7qlcS7ytlqclDkN1rdwOi\n-----END CERTIFICATE-----\n","device_id":"esp32_01","run_id":"2"}
+MEASURE run_id=2 heap_before=205432 heap_after=204996 heap_delta=-436 start_ms=11723 end_ms=12806 latency_ms=1083 http_status=200
+[0;32mI (13278) example: ... done reading from socket. Last read return=0 errno=128.[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  4 2026 19:17:04[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19738h (104248) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00029760 vaddr=3ffb0000 size=04348h ( 17224) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002dab0 vaddr=40080000 size=02568h (  9576) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8be98h (573080) map[0m
+[0;32mI (329) esp_image: segment 4: paddr=000bbec0 vaddr=40082568 size=15a90h ( 88720) load[0m
+[0;32mI (364) esp_image: segment 5: paddr=000d1958 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (376) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (376) boot: Disabling RNG early entropy source...[0m
+[0;32mI (386) cpu_start: Multicore app[0m
+[0;32mI (394) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (395) cpu_start: Pro cpu start user code[0m
+[0;32mI (395) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (397) app_init: Application information:[0m
+[0;32mI (400) app_init: Project name:     http_request[0m
+[0;32mI (405) app_init: App version:      1[0m
+[0;32mI (408) app_init: Compile time:     Mar  4 2026 19:16:44[0m
+[0;32mI (413) app_init: ELF file SHA256:  76af5f8f1...[0m
+[0;32mI (417) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (421) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (425) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (429) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (433) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (439) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (444) heap_init: At 3FFB8B78 len 00027488 (157 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (455) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40098000 len 00008000 (32 KiB): IRAM[0m
+[0;33mW (467) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (479) spi_flash: detected chip: generic[0m
+[0;32mI (482) spi_flash: flash io: dio[0m
+[0;33mW (485) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (498) main_task: Started on CPU0[0m
+[0;32mI (508) main_task: Calling app_main()[0m
+[0;32mI (518) example_connect: Start example_connect.[0m
+[0;32mI (528) wifi:wifi driver task: 3ffc06c4, prio:23, stack:6656, core=0[0m
+[0;32mI (528) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (528) wifi:wifi certification version: v7.0[0m
+[0;32mI (528) wifi:config NVS flash: enabled[0m
+[0;32mI (528) wifi:config nano formatting: disabled[0m
+[0;32mI (538) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (538) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (548) wifi:Init management short buffer num: 32[0m
+[0;32mI (548) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (558) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (558) wifi:Init static rx buffer num: 10[0m
+[0;32mI (558) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (568) wifi_init: rx ba win: 6[0m
+[0;32mI (568) wifi_init: accept mbox: 6[0m
+[0;32mI (568) wifi_init: tcpip mbox: 32[0m
+[0;32mI (578) wifi_init: udp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp tx win: 5760[0m
+[0;32mI (578) wifi_init: tcp rx win: 5760[0m
+[0;32mI (588) wifi_init: tcp mss: 1440[0m
+[0;32mI (588) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (588) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (598) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (678) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (748) wifi:mode : sta (00:70:07:17:c4:b4)[0m
+[0;32mI (748) wifi:enable tsf[0m
+[0;32mI (748) example_connect: Connecting to Ahmed...[0m
+[0;33mW (758) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (758) example_connect: Waiting for IP(s)[0m
+[0;32mI (3418) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3418) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3428) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3438) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3448) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (3448) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3448) example_connect: Wi-Fi disconnected 2, trying to reconnect...[0m
+[0;32mI (5868) example_connect: Wi-Fi disconnected 205, trying to reconnect...[0m
+[0;32mI (8278) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8278) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8288) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8288) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8318) wifi:connected with Ahmed, aid = 1, channel 6, BW20, bssid = 06:b2:cd:44:8e:14[0m
+[0;32mI (8318) wifi:security: WPA2-PSK, phy: bgn, rssi: -66[0m
+[0;32mI (8318) wifi:pm start, type: 1[0m
+
+[0;32mI (8328) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8338) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8338) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (8348) wifi:<ba-add>idx:0 (ifx:0, 06:b2:cd:44:8e:14), tid:0, ssn:0, winSize:64[0m
+[0;32mI (9378) esp_netif_handlers: example_netif_sta ip: 192.168.55.6, mask: 255.255.255.0, gw: 192.168.55.239[0m
+[0;32mI (9378) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.55.6[0m
+[0;32mI (9518) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (9518) example_common: Connected to example_netif_sta[0m
+[0;32mI (9528) example_common: - IPv4 address: 192.168.55.6,[0m
+[0;32mI (9528) example_common: - IPv6 address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+Generating CSR...
+[0;32mI (9718) main_task: Returned from app_main()[0m
+CSR generated
+[0;32mI (10018) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (10018) example: ... allocated socket[0m
+[0;32mI (10498) example: ... connected[0m
+[0;32mI (10498) example: ... socket send success[0m
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.6 Python/3.12.3
+Date: Wed, 04 Mar 2026 16:41:26 GMT
+Content-Type: application/json
+Content-Length: 3378
+Connection: close
+
+{"ca_cert_pem":"-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----\n","device_cert_pem":"-----BEGIN CERTIFICATE-----\nMIIDRDCCASygAwIBAgIUaxUVYLZfs7DG4jxWgsXioXN/mFgwDQYJKoZIhvcNAQEL\nBQAwcDELMAkGA1UEBhMCU0ExDzANBgNVBAgMBlJpeWFkaDEPMA0GA1UEBwwGUml5\nYWRoMRswGQYDVQQKDBJJb1QtT25ib2FyZGluZy1MYWIxCzAJBgNVBAsMAkNBMRUw\nEwYDVQQDDAxMb2NhbC1Jb1QtQ0EwHhcNMjYwMzA0MTY0MDI2WhcNMjcwMzA0MTY0\nMTI2WjATMREwDwYDVQQDDAhlc3AzMl8wMTBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABNlxLWVnt6gHI2R5pxzjKDmBQc9xB1QGksD5tuPHy4xSz4oOF0s+JVIXgJR7\n9JT98zCbmJcH3En9F2SLbg868OYwDQYJKoZIhvcNAQELBQADggIBAA2wu1bq5aqx\nbcUnmlZ7dnIYbXHGW6oIJjua2YUGOL6FzYF8W0sSSbspH0bRODDxjl7HGkV8Lq58\nL0ao6GZBvc2MnXylmhBTS3qakjdjgx6jHhpRJa5wtyEQn8BbaHppFPmHJPahFK9x\nGU1i7Q0MuvCaLMyLeq8W1ixyuVS4tnJIVZgGI83hQYw2OR92gVvfRo8VFEqWnLq3\nX3NlrHIQaGGsbY/FE2xvo1745RyT0hkMVFYKN4DOH+9vDNcmILJTGM488uhT9Ai5\nSkO9sh2M0UfxbOdIbsVZMaB4pYtm68j8tnAchG40qYERsG1bsNGwaz5nCatJewAW\nTFiVyvHamLM4OnRILzhKBuZcS9ZhIGBl414nQeqb8vRJCA1W+H0F72ufLaMEM5yW\nrEkUfEZULZJ40NS4+RN02URSHb+06K6IhC2ccdc24KqRkH9pGYYSh2ElGhTRCna5\ni8FXBtejUwu4zPjguK0mRSgePadQchDaInmHHqcBfeMvYsext1lS5S1cOzGSx4Vl\nnfTEPJllTrtxxF4825MStEhvVXxoW0RDq+uDTeBOn6psvNu94ywJ02LQ0/FDecAd\nbbkUOm6fitc9Lz4f7e9kp1aX+UX+3nsKgvKbvW/l+LAKP6arVi73i+xCQAcEcAn3\nbJFzhc8nnF8tzc0s3Z78naz8XQdtOBzr\n-----END CERTIFICATE-----\n","device_id":"esp32_01","run_id":"1"}
+MEASURE run_id=1 heap_before=201120 heap_after=204984 heap_delta=3864 start_ms=9081 end_ms=10735 latency_ms=1654 http_status=200
+[0;32mI (11208) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (11518) example_connect: Got IPv6 event: Interface "example_netif_sta" address: 2a02:09b0:0040:a915:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_GLOBAL[0m
+Generating CSR...
+CSR generated
+[0;32mI (13188) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (13188) example: ... allocated socket[0m
+[0;32mI (13198) example: ... connected[0m
+[0;32mI (13198) example: ... socket send success[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  4 2026 19:17:04[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19738h (104248) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00029760 vaddr=3ffb0000 size=04348h ( 17224) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002dab0 vaddr=40080000 size=02568h (  9576) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8be98h (573080) map[0m
+[0;32mI (329) esp_image: segment 4: paddr=000bbec0 vaddr=40082568 size=15a90h ( 88720) load[0m
+[0;32mI (364) esp_image: segment 5: paddr=000d1958 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (376) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (376) boot: Disabling RNG early entropy source...[0m
+[0;32mI (386) cpu_start: Multicore app[0m
+[0;32mI (394) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (395) cpu_start: Pro cpu start user code[0m
+[0;32mI (395) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (397) app_init: Application information:[0m
+[0;32mI (400) app_init: Project name:     http_request[0m
+[0;32mI (405) app_init: App version:      1[0m
+[0;32mI (408) app_init: Compile time:     Mar  4 2026 19:16:44[0m
+[0;32mI (413) app_init: ELF file SHA256:  76af5f8f1...[0m
+[0;32mI (417) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (421) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (425) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (429) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (433) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (439) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (444) heap_init: At 3FFB8B78 len 00027488 (157 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (455) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40098000 len 00008000 (32 KiB): IRAM[0m
+[0;33mW (467) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (479) spi_flash: detected chip: generic[0m
+[0;32mI (482) spi_flash: flash io: dio[0m
+[0;33mW (485) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (498) main_task: Started on CPU0[0m
+[0;32mI (508) main_task: Calling app_main()[0m
+[0;32mI (518) example_connect: Start example_connect.[0m
+[0;32mI (528) wifi:wifi driver task: 3ffc06c4, prio:23, stack:6656, core=0[0m
+[0;32mI (528) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (528) wifi:wifi certification version: v7.0[0m
+[0;32mI (528) wifi:config NVS flash: enabled[0m
+[0;32mI (528) wifi:config nano formatting: disabled[0m
+[0;32mI (538) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (538) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (548) wifi:Init management short buffer num: 32[0m
+[0;32mI (548) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (558) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (558) wifi:Init static rx buffer num: 10[0m
+[0;32mI (558) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (568) wifi_init: rx ba win: 6[0m
+[0;32mI (568) wifi_init: accept mbox: 6[0m
+[0;32mI (568) wifi_init: tcpip mbox: 32[0m
+[0;32mI (578) wifi_init: udp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp tx win: 5760[0m
+[0;32mI (578) wifi_init: tcp rx win: 5760[0m
+[0;32mI (588) wifi_init: tcp mss: 1440[0m
+[0;32mI (588) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (588) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (598) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (678) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (708) wifi:mode : sta (00:70:07:17:c4:b4)[0m
+[0;32mI (708) wifi:enable tsf[0m
+[0;32mI (708) example_connect: Connecting to Ahmed...[0m
+[0;33mW (708) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (718) example_connect: Waiting for IP(s)[0m
+[0;32mI (3378) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3378) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3388) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3398) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3418) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (3418) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3418) example_connect: Wi-Fi disconnected 2, trying to reconnect...[0m
+[0;32mI (5838) example_connect: Wi-Fi disconnected 205, trying to reconnect...[0m
+[0;32mI (8248) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8248) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8258) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8268) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8298) wifi:connected with Ahmed, aid = 1, channel 6, BW20, bssid = 06:b2:cd:44:8e:14[0m
+[0;32mI (8298) wifi:security: WPA2-PSK, phy: bgn, rssi: -65[0m
+[0;32mI (8298) wifi:pm start, type: 1[0m
+
+[0;32mI (8298) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8318) wifi:<ba-add>idx:0 (ifx:0, 06:b2:cd:44:8e:14), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8318) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8318) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9348) esp_netif_handlers: example_netif_sta ip: 192.168.55.6, mask: 255.255.255.0, gw: 192.168.55.239[0m
+[0;32mI (9348) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.55.6[0m
+[0;32mI (9518) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (9518) example_common: Connected to example_netif_sta[0m
+[0;32mI (9528) example_common: - IPv4 address: 192.168.55.6,[0m
+[0;32mI (9528) example_common: - IPv6 address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+Generating CSR...
+[0;32mI (9618) main_task: Returned from app_main()[0m
+CSR generated
+[0;32mI (10008) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (10008) example: ... allocated socket[0m
+[0;32mI (10018) example: ... connected[0m
+[0;32mI (10018) example: ... socket send success[0m
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.6 Python/3.12.3
+Date: Wed, 04 Mar 2026 16:41:39 GMT
+Content-Type: application/json
+Content-Length: 3378
+Connection: close
+
+{"ca_cert_pem":"-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----\n","device_cert_pem":"-----BEGIN CERTIFICATE-----\nMIIDRDCCASygAwIBAgIUFAH178o6UGWWMQz6k4SdYpoFRc0wDQYJKoZIhvcNAQEL\nBQAwcDELMAkGA1UEBhMCU0ExDzANBgNVBAgMBlJpeWFkaDEPMA0GA1UEBwwGUml5\nYWRoMRswGQYDVQQKDBJJb1QtT25ib2FyZGluZy1MYWIxCzAJBgNVBAsMAkNBMRUw\nEwYDVQQDDAxMb2NhbC1Jb1QtQ0EwHhcNMjYwMzA0MTY0MDM5WhcNMjcwMzA0MTY0\nMTM5WjATMREwDwYDVQQDDAhlc3AzMl8wMTBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABH72FsEfriRFwMhQK8+kD0lhuou/DC8UyLMLh9vqmbsIghJueWRgyAwjGGjo\nLGhMrOYjg09P9NHJZ3/oGCfdFOMwDQYJKoZIhvcNAQELBQADggIBAFVdaEcM2Fvj\nG4eaWw6c/9xRoOmMVTfEWsjyktmKIHHKA5oOxwTPRaRSxPc9nuhpDdwkmAZyEWlJ\nPP8jwMK6VlkLcEELBtjWoNyAHvwXsCje8WyqW1HngF8jgog39/+VZ7hCe4xc65zN\nRVxh5L/5INH0GoOhHnt1HSNpy+FhL5NgPJCEorEed4lzPuzduJAn3vj0h8AVTZmk\nbQMr11RtPiV69qPlNU2x7KDQreY3BVS59dKedKKoau1M0zjP+0LLisydwhmfbrGi\n5Rtd5rW+Gtdyjcrf3Hf1QMbtp0gqpn+38pF+5kE5ULTUBnsfLChO744DBvXfa+ox\nATy9KnkxCSnYIPQsCcm/QWljj4W5oYCEPbv5nWd2ivOma8zb7EN460KSHDbeNerr\nzJDMXo1dHuLB9GFniCm38IuyvrCq1NIGfNNmzR370JmYc8xxm8XrtishoVi44Evr\nhw6Pi1UOJjkPIVtsXAA0TOWA5g25ADW1o8b5/3mnEghc9mHKYkSvVy945tB28in3\nZWC59PQ6C0BbDlRC9UW2bPbpDzbhXeouEvVZmen2hH1WpaH3MwMa1ojbN8oZZIX/\nujkILxWDWPK+QReUBg6LVWXd2rTt0wLhv8vcJhEuFd/tWBXRjLrGYDPV6g+hqJYJ\nxEyqfcxk7fO+k47S4HTaw8PAHYTwRkwE\n-----END CERTIFICATE-----\n","device_id":"esp32_01","run_id":"1"}
+MEASURE run_id=1 heap_before=201000 heap_after=205012 heap_delta=4012 start_ms=9080 end_ms=10132 latency_ms=1051 http_status=200
+[0;32mI (10608) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (11518) example_connect: Got IPv6 event: Interface "example_netif_sta" address: 2a02:09b0:0040:a915:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_GLOBAL[0m
+Generating CSR...
+CSR generated
+[0;32mI (12558) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (12568) example: ... allocated socket[0m
+[0;32mI (12568) example: ... connected[0m
+[0;32mI (12568) example: ... socket send success[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  4 2026 19:17:04[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19738h (104248) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00029760 vaddr=3ffb0000 size=04348h ( 17224) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002dab0 vaddr=40080000 size=02568h (  9576) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8be98h (573080) map[0m
+[0;32mI (329) esp_image: segment 4: paddr=000bbec0 vaddr=40082568 size=15a90h ( 88720) load[0m
+[0;32mI (364) esp_image: segment 5: paddr=000d1958 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (376) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (376) boot: Disabling RNG early entropy source...[0m
+[0;32mI (386) cpu_start: Multicore app[0m
+[0;32mI (394) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (395) cpu_start: Pro cpu start user code[0m
+[0;32mI (395) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (397) app_init: Application information:[0m
+[0;32mI (400) app_init: Project name:     http_request[0m
+[0;32mI (405) app_init: App version:      1[0m
+[0;32mI (408) app_init: Compile time:     Mar  4 2026 19:16:44[0m
+[0;32mI (413) app_init: ELF file SHA256:  76af5f8f1...[0m
+[0;32mI (417) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (421) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (425) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (429) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (433) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (439) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (444) heap_init: At 3FFB8B78 len 00027488 (157 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (455) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40098000 len 00008000 (32 KiB): IRAM[0m
+[0;33mW (467) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (479) spi_flash: detected chip: generic[0m
+[0;32mI (482) spi_flash: flash io: dio[0m
+[0;33mW (485) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (498) main_task: Started on CPU0[0m
+[0;32mI (508) main_task: Calling app_main()[0m
+[0;32mI (518) example_connect: Start example_connect.[0m
+[0;32mI (528) wifi:wifi driver task: 3ffc06c4, prio:23, stack:6656, core=0[0m
+[0;32mI (528) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (528) wifi:wifi certification version: v7.0[0m
+[0;32mI (528) wifi:config NVS flash: enabled[0m
+[0;32mI (528) wifi:config nano formatting: disabled[0m
+[0;32mI (538) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (538) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (548) wifi:Init management short buffer num: 32[0m
+[0;32mI (548) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (558) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (558) wifi:Init static rx buffer num: 10[0m
+[0;32mI (558) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (568) wifi_init: rx ba win: 6[0m
+[0;32mI (568) wifi_init: accept mbox: 6[0m
+[0;32mI (568) wifi_init: tcpip mbox: 32[0m
+[0;32mI (578) wifi_init: udp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp mbox: 6[0m
+[0;32mI (578) wifi_init: tcp tx win: 5760[0m
+[0;32mI (578) wifi_init: tcp rx win: 5760[0m
+[0;32mI (588) wifi_init: tcp mss: 1440[0m
+[0;32mI (588) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (588) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (598) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (688) wifi:mode : sta (00:70:07:17:c4:b4)[0m
+[0;32mI (688) wifi:enable tsf[0m
+[0;32mI (698) example_connect: Connecting to Ahmed...[0m
+[0;33mW (698) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (698) example_connect: Waiting for IP(s)[0m
+[0;32mI (3358) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3358) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3368) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3378) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3388) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (3398) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3398) example_connect: Wi-Fi disconnected 2, trying to reconnect...[0m
+[0;32mI (5808) example_connect: Wi-Fi disconnected 205, trying to reconnect...[0m
+[0;32mI (8228) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8228) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8238) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8248) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8428) wifi:connected with Ahmed, aid = 1, channel 6, BW20, bssid = 06:b2:cd:44:8e:14[0m
+[0;32mI (8428) wifi:security: WPA2-PSK, phy: bgn, rssi: -63[0m
+[0;32mI (8428) wifi:pm start, type: 1[0m
+
+[0;32mI (8438) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8448) wifi:<ba-add>idx:0 (ifx:0, 06:b2:cd:44:8e:14), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8468) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8468) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9478) esp_netif_handlers: example_netif_sta ip: 192.168.55.6, mask: 255.255.255.0, gw: 192.168.55.239[0m
+[0;32mI (9478) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.55.6[0m
+[0;32mI (9518) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (9518) example_common: Connected to example_netif_sta[0m
+[0;32mI (9528) example_common: - IPv4 address: 192.168.55.6,[0m
+[0;32mI (9528) example_common: - IPv6 address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+Generating CSR...
+[0;32mI (9718) main_task: Returned from app_main()[0m
+CSR generated
+[0;32mI (10018) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (10018) example: ... allocated socket[0m
+[0;32mI (10028) example: ... connected[0m
+[0;32mI (10028) example: ... socket send success[0m
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.6 Python/3.12.3
+Date: Wed, 04 Mar 2026 16:41:52 GMT
+Content-Type: application/json
+Content-Length: 3378
+Connection: close
+
+{"ca_cert_pem":"-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----\n","device_cert_pem":"-----BEGIN CERTIFICATE-----\nMIIDRDCCASygAwIBAgIUcVzriV3r267SGmjSeGSjsMqPB5YwDQYJKoZIhvcNAQEL\nBQAwcDELMAkGA1UEBhMCU0ExDzANBgNVBAgMBlJpeWFkaDEPMA0GA1UEBwwGUml5\nYWRoMRswGQYDVQQKDBJJb1QtT25ib2FyZGluZy1MYWIxCzAJBgNVBAsMAkNBMRUw\nEwYDVQQDDAxMb2NhbC1Jb1QtQ0EwHhcNMjYwMzA0MTY0MDUyWhcNMjcwMzA0MTY0\nMTUyWjATMREwDwYDVQQDDAhlc3AzMl8wMTBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABNjt4AP0p1w5HpUf9HORxIz7NDSMmcs46VHylhYEZRWtouMmbrq1aflmtbmw\nGg8+X28annZcgvhtasejJ8KVj4UwDQYJKoZIhvcNAQELBQADggIBAKQVNGeny5FT\nG591FOLd0nzGJQivrmk6sjPlFyPYt8jPv/uxRTeHupoYqqoxgo012auLTZT1axmU\nQHFf6D7719l/RBjQVr0UTCDo/RwnRHFtsP9PXU/UZjmqIY9MoFOMkt4DXnLo/F0H\nrtCdhVt0UK1prkysb32PVQ7jiSV18CxVbRrlYfExMOclB7Xwzj/v5bByZXmHjoum\n6Bnwkxp223YGisLr77EXfN3WYcA/NUdvL19L5yyqcLxDOic28tE1XuEAqP8e2y8i\nu/ZDHPy7WQK4qgMjlsfb8SlbPy3VF7aGF5aRqWdYJkcq8vyaDwAQjZtRfdLYon6h\nmt6E/C+bXqcNQI2omdZI9v3Qs48qqfqDQUsaCWRGpmkP8r8ReJivnxLxFek1ObPh\nGZgaurvYNzPPX7EQtYUCdNlSh/Kp4NFbOw58eJ/tVM/QOKnY/8KrUpoSnLmmt/6i\n3JxNsAZI82ZTZx/M6WRZhok/bagEsM1AKnVzT7k3Sp+7PexkeEHXZWDkNNKY40xd\ngyhCso9nQbFBFboDucWLYqbyfGLYUo7fqzBYZpDvyuGwcUmqPUFL2UQ6h1yhfjLG\nH5X84iLDdfvTisr7Uz2VpqQLT7i9JMRgbFxz6lsRtyUcrDWFyr6UaLDc8SzGUM8I\nReHXUbUbC4OCvfnwbv4pZ7H4PgasCrVP\n-----END CERTIFICATE-----\n","device_id":"esp32_01","run_id":"1"}
+MEASURE run_id=1 heap_before=201352 heap_after=205000 heap_delta=3648 start_ms=9079 end_ms=10204 latency_ms=1124 http_status=200
+[0;32mI (10678) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (11518) example_connect: Got IPv6 event: Interface "example_netif_sta" address: 2a02:09b0:0040:a915:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_GLOBAL[0m
+Generating CSR...
+CSR generated
+[0;32mI (12648) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (12648) example: ... allocated socket[0m
+[0;32mI (12658) example: ... connected[0m
+[0;32mI (12658) example: ... socket send success[0m
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.6 Python/3.12.3
+Date: Wed, 04 Mar 2026 16:41:54 GMT
+Content-Type: application/json
+Content-Length: 3378
+Connection: close
+
+{"ca_cert_pem":"-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----\n","device_cert_pem":"-----BEGIN CERTIFICATE-----\nMIIDRDCCASygAwIBAgIUCY2bdh1K3xghPwFQUqgNfJOipWswDQYJKoZIhvcNAQEL\nBQAwcDELMAkGA1UEBhMCU0ExDzANBgNVBAgMBlJpeWFkaDEPMA0GA1UEBwwGUml5\nYWRoMRswGQYDVQQKDBJJb1QtT25ib2FyZGluZy1MYWIxCzAJBgNVBAsMAkNBMRUw\nEwYDVQQDDAxMb2NhbC1Jb1QtQ0EwHhcNMjYwMzA0MTY0MDU0WhcNMjcwMzA0MTY0\nMTU0WjATMREwDwYDVQQDDAhlc3AzMl8wMTBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABC4h/87Hnd7sRw7wBBZB1j2ukD4R/vdUmYZNr/4mloupQDSQSVFknalyRGHB\nqFMuFmfwlgZLp6RN/b23KI1pMA0wDQYJKoZIhvcNAQELBQADggIBAHMlfXshXT6S\nJjjiAVMgquFZkY+Gj9jwp+gUCy5zoWON+IrPxrujS3SvoFdDfOQqVggf9CP5INDf\n/uETDn07oU+eOHcBzThVGGxIcEp492cyRJqEVX2BC8pQNnUW8YSwRjyngn5h5Czw\ne7ZeNCDn+dxwaML+ZwnIgeDfo17I8OuuZa4fP8rG2V2CEZSjXrLB9a250V9UsqpA\nNQLKb0JbKvz1oPd4fZt9N3Tx2ap4pLCI+22KYmr/22/RqEy41bTesb+TwfvwSYU5\nKH8nuWiBXXRAQk5ar6hTUe7CLORcFbJXzU2XuvZsMXEsFgEJ/eA60++l30lxGxel\noZp7dYBBRIBz0LllmsKR/IWCF1P0wbaZdxUfbZQrmqjkPIY9PAL8GCkTPHyl1m/l\nwh4K2r0Hkag9yyenCPNgqF50n+yz6smENhWkKg+wMUwQQgHYHWKXtIr2PeFZFuLC\njDcEqHGq40R2WeDfJVfbKZ8+DSNxi5sdLe4w65YByjK0gz8ARxfmVfSGIb7u3F5z\nx81o3gnz6rLgriKwo4ZCsyn/v5y62/SejOL0UerpyXhRFAdHBsDcAeuS3hjZEOvU\n/s7R/b46ZmT0v4sOHOnn/L7HgyC9z7nuBDvo264/tKySZw8iZJG0uhg/+e/qi5Y7\nd1d8o6c8QsQ8nVlKiSxrdGOOMbQMkZr9\n-----END CERTIFICATE-----\n","device_id":"esp32_01","run_id":"2"}
+MEASURE run_id=2 heap_before=205428 heap_after=204876 heap_delta=-552 start_ms=11723 end_ms=12823 latency_ms=1099 http_status=200
+[0;32mI (13298) example: ... done reading from socket. Last read return=0 errno=128.[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  4 2026 19:17:04[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=19738h (104248) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00029760 vaddr=3ffb0000 size=04348h ( 17224) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002dab0 vaddr=40080000 size=02568h (  9576) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=8be98h (573080) map[0m
+[0;32mI (329) esp_image: segment 4: paddr=000bbec0 vaddr=40082568 size=15a90h ( 88720) load[0m
+[0;32mI (364) esp_image: segment 5: paddr=000d1958 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (376) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (376) boot: Disabling RNG early entropy source...[0m
+[0;32mI (386) cpu_start: Multicore app[0m
+[0;32mI (394) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (395) cpu_start: Pro cpu start user code[0m
+[0;32mI (395) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (397) app_init: Application information:[0m
+[0;32mI (400) app_init: Project name:     http_request[0m
+[0;32mI (405) app_init: App version:      1[0m
+[0;32mI (408) app_init: Compile time:     Mar  4 2026 19:16:44[0m
+[0;32mI (413) app_init: ELF file SHA256:  76af5f8f1...[0m
+[0;32mI (417) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (421) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (425) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (429) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (433) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (439) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (444) heap_init: At 3FFB8B78 len 00027488 (157 KiB): DRAM[0m
+[0;32mI (450) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (455) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (461) heap_init: At 40098000 len 00008000 (32 KiB): IRAM[0m
+[0;33mW (467) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (479) spi_flash: detected chip: generic[0m
+[0;32mI (482) spi_flash: flash io: dio[0m
+[0;33mW (485) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (499) main_task: Started on CPU0[0m
+[0;32mI (509) main_task: Calling app_main()[0m
+[0;32mI (519) example_connect: Start example_connect.[0m
+[0;32mI (529) wifi:wifi driver task: 3ffc06c4, prio:23, stack:6656, core=0[0m
+[0;32mI (529) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (529) wifi:wifi certification version: v7.0[0m
+[0;32mI (529) wifi:config NVS flash: enabled[0m
+[0;32mI (529) wifi:config nano formatting: disabled[0m
+[0;32mI (539) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (539) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (549) wifi:Init management short buffer num: 32[0m
+[0;32mI (549) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (559) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (559) wifi:Init static rx buffer num: 10[0m
+[0;32mI (559) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (569) wifi_init: rx ba win: 6[0m
+[0;32mI (569) wifi_init: accept mbox: 6[0m
+[0;32mI (569) wifi_init: tcpip mbox: 32[0m
+[0;32mI (579) wifi_init: udp mbox: 6[0m
+[0;32mI (579) wifi_init: tcp mbox: 6[0m
+[0;32mI (579) wifi_init: tcp tx win: 5760[0m
+[0;32mI (579) wifi_init: tcp rx win: 5760[0m
+[0;32mI (589) wifi_init: tcp mss: 1440[0m
+[0;32mI (589) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (589) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (599) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (689) wifi:mode : sta (00:70:07:17:c4:b4)[0m
+[0;32mI (689) wifi:enable tsf[0m
+[0;32mI (689) example_connect: Connecting to Ahmed...[0m
+[0;33mW (689) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (699) example_connect: Waiting for IP(s)[0m
+[0;32mI (3359) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3359) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3369) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3379) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3519) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (3519) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3529) example_connect: Wi-Fi disconnected 2, trying to reconnect...[0m
+[0;32mI (5939) example_connect: Wi-Fi disconnected 205, trying to reconnect...[0m
+[0;32mI (8359) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8359) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8359) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8369) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8429) wifi:connected with Ahmed, aid = 1, channel 6, BW20, bssid = 06:b2:cd:44:8e:14[0m
+[0;32mI (8429) wifi:security: WPA2-PSK, phy: bgn, rssi: -64[0m
+[0;32mI (8439) wifi:pm start, type: 1[0m
+
+[0;32mI (8439) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8449) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8459) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (8469) wifi:<ba-add>idx:0 (ifx:0, 06:b2:cd:44:8e:14), tid:0, ssn:0, winSize:64[0m
+[0;32mI (9519) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (9519) esp_netif_handlers: example_netif_sta ip: 192.168.55.6, mask: 255.255.255.0, gw: 192.168.55.239[0m
+[0;32mI (9529) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.55.6[0m
+[0;32mI (9539) example_common: Connected to example_netif_sta[0m
+[0;32mI (9539) example_common: - IPv4 address: 192.168.55.6,[0m
+[0;32mI (9549) example_common: - IPv6 address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+Generating CSR...
+[0;32mI (9619) main_task: Returned from app_main()[0m
+CSR generated
+[0;32mI (10039) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (10039) example: ... allocated socket[0m
+[0;32mI (10089) example: ... connected[0m
+[0;32mI (10089) example: ... socket send success[0m
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.6 Python/3.12.3
+Date: Wed, 04 Mar 2026 16:42:05 GMT
+Content-Type: application/json
+Content-Length: 3378
+Connection: close
+
+{"ca_cert_pem":"-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----\n","device_cert_pem":"-----BEGIN CERTIFICATE-----\nMIIDRDCCASygAwIBAgIUdWgDvHn2pq6XxsmhSF981+0pCy8wDQYJKoZIhvcNAQEL\nBQAwcDELMAkGA1UEBhMCU0ExDzANBgNVBAgMBlJpeWFkaDEPMA0GA1UEBwwGUml5\nYWRoMRswGQYDVQQKDBJJb1QtT25ib2FyZGluZy1MYWIxCzAJBgNVBAsMAkNBMRUw\nEwYDVQQDDAxMb2NhbC1Jb1QtQ0EwHhcNMjYwMzA0MTY0MTA1WhcNMjcwMzA0MTY0\nMjA1WjATMREwDwYDVQQDDAhlc3AzMl8wMTBZMBMGByqGSM49AgEGCCqGSM49AwEH\nA0IABEKoqLPJyroHFdwKS6p7rHfM5WAeoni/W7Al5gS/d/FLana2YjpihBIIfMcB\nim7mhVf19tl8PtVYsAcFWpyFqPEwDQYJKoZIhvcNAQELBQADggIBAKyqynzg0G1Y\nIOg93cwmd4ac3oD+bQjfLcwQypJ7lSyb6IP7pI8vz1kvuBVEjZQTIWq3xF2yKx6y\ncspxaid/7yRe97/QIH3b7FZ+4EW412JWtD/V1tFybIe6N2Wz7JOih0P6EOVLXK1Z\ncs59qXd4VCbwjD1PSnT5b+99rGt6MjN2VNldYwaDzDO7FJ81hgvNaZrMlV7ThTfv\nt723p9/Z8QHezMfFSsP7LECHHfnxB6jxhPVlt0OVCetFk1bZV+5wvnfQxMM6JbW7\nfG1VGtAPyrTQmAYRp8vLtn+GHGfIK1rZf4xW8PwdowlN3NQVQ48M7ef69CCzE4Eq\newx9P+KMI6Iyi2xifohdOOV6R2BybvE4/noXi3HU20pM0VODJUi+dAgESkzaqyyz\nPo6b4KJhvvRM9W9b0SiNEbfls2svf6uaEFAIVwMGzMkwLfocGFkDu2bu8ZXZcxC8\nKNFFGZc/3UMDzcTFTHuqFED2dKPA14VTKAKAaBBFK28i7T7zgYwu+cWiR+c9vmKk\n6iJ2q4y6pE+MPfugdHqxIooBxzEiCvYG65WZjtgELQ0xUXim659IA+8niXczo2V6\nLquYHsjFQKmh/uJZ/c4QxbP+n6ww0qbEfcfYoHxIk7JT3OeRNeX2BTqq5Xeg/ZXo\n72Vd1uIEkBtqFHUqg4MjtUqBXPRZlt+3\n-----END CERTIFICATE-----\n","device_id":"esp32_01","run_id":"1"}
+MEASURE run_id=1 heap_before=201352 heap_after=205012 heap_delta=3660 start_ms=9096 end_ms=10166 latency_ms=1069 http_status=200
+[0;32mI (10639) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (11519) example_connect: Got IPv6 event: Interface "example_netif_sta" address: 2a02:09b0:0040:a915:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_GLOBAL[0m
+Generating CSR...

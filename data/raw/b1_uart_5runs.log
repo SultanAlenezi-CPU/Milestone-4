@@ -1,0 +1,649 @@
+Executing action: monitor
+Running idf_monitor in directory /home/iot_onboarding/esp_projects/baseline1_http
+Executing "/home/iot_onboarding/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/iot_onboarding/esp-idf-v5.5.3/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/iot_onboarding/esp_projects/baseline1_http/build/bootloader/bootloader.elf -m '/home/iot_onboarding/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/iot_onboarding/esp-idf-v5.5.3/tools/idf.py' '-p' '/dev/ttyUSB0'"...
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  4 2026 14:51:06[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=18e18h (101912) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=00028e40 vaddr=3ffb0000 size=04348h ( 17224) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=0002d190 vaddr=40080000 size=02e88h ( 11912) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=85ce8h (548072) map[0m
+[0;32mI (320) esp_image: segment 4: paddr=000b5d10 vaddr=40082e88 size=15170h ( 86384) load[0m
+[0;32mI (354) esp_image: segment 5: paddr=000cae88 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (366) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (366) boot: Disabling RNG early entropy source...[0m
+[0;32mI (376) cpu_start: Multicore app[0m
+[0;32mI (385) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (385) cpu_start: Pro cpu start user code[0m
+[0;32mI (385) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (387) app_init: Application information:[0m
+[0;32mI (391) app_init: Project name:     http_request[0m
+[0;32mI (395) app_init: App version:      1[0m
+[0;32mI (398) app_init: Compile time:     Mar  4 2026 14:50:46[0m
+[0;32mI (403) app_init: ELF file SHA256:  28bf5271c...[0m
+[0;32mI (408) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (412) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (415) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (419) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (423) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (430) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB8B70 len 00027490 (157 KiB): DRAM[0m
+[0;32mI (440) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (445) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (451) heap_init: At 40098000 len 00008000 (32 KiB): IRAM[0m
+[0;33mW (457) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (469) spi_flash: detected chip: generic[0m
+[0;32mI (473) spi_flash: flash io: dio[0m
+[0;33mW (476) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (489) main_task: Started on CPU0[0m
+[0;32mI (499) main_task: Calling app_main()[0m
+[0;32mI (509) example_connect: Start example_connect.[0m
+[0;32mI (519) wifi:wifi driver task: 3ffc06bc, prio:23, stack:6656, core=0[0m
+[0;32mI (519) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (519) wifi:wifi certification version: v7.0[0m
+[0;32mI (519) wifi:config NVS flash: enabled[0m
+[0;32mI (519) wifi:config nano formatting: disabled[0m
+[0;32mI (529) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (529) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (539) wifi:Init management short buffer num: 32[0m
+[0;32mI (539) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (549) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (549) wifi:Init static rx buffer num: 10[0m
+[0;32mI (549) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (559) wifi_init: rx ba win: 6[0m
+[0;32mI (559) wifi_init: accept mbox: 6[0m
+[0;32mI (559) wifi_init: tcpip mbox: 32[0m
+[0;32mI (569) wifi_init: udp mbox: 6[0m
+[0;32mI (569) wifi_init: tcp mbox: 6[0m
+[0;32mI (569) wifi_init: tcp tx win: 5760[0m
+[0;32mI (579) wifi_init: tcp rx win: 5760[0m
+[0;32mI (579) wifi_init: tcp mss: 1440[0m
+[0;32mI (579) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (579) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (589) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (679) wifi:mode : sta (00:70:07:17:c4:b4)[0m
+[0;32mI (679) wifi:enable tsf[0m
+[0;32mI (679) example_connect: Connecting to Ahmed...[0m
+[0;33mW (679) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (689) example_connect: Waiting for IP(s)[0m
+[0;32mI (3349) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3349) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3359) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3369) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3529) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (3529) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3529) example_connect: Wi-Fi disconnected 2, trying to reconnect...[0m
+[0;32mI (5949) example_connect: Wi-Fi disconnected 205, trying to reconnect...[0m
+[0;32mI (8369) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8369) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (8369) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (8379) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (8569) wifi:connected with Ahmed, aid = 1, channel 6, BW20, bssid = 06:b2:cd:44:8e:14[0m
+[0;32mI (8569) wifi:security: WPA2-PSK, phy: bgn, rssi: -57[0m
+[0;32mI (8579) wifi:pm start, type: 1[0m
+
+[0;32mI (8579) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8599) wifi:<ba-add>idx:0 (ifx:0, 06:b2:cd:44:8e:14), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8629) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8639) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (9629) esp_netif_handlers: example_netif_sta ip: 192.168.55.6, mask: 255.255.255.0, gw: 192.168.55.239[0m
+[0;32mI (9629) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.55.6[0m
+[0;32mI (10509) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (10509) example_common: Connected to example_netif_sta[0m
+[0;32mI (10519) example_common: - IPv4 address: 192.168.55.6,[0m
+[0;32mI (10519) example_common: - IPv6 address: fe80:0000:0000:0000:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (10529) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (10539) example: ... allocated socket[0m
+[0;32mI (10539) main_task: Returned from app_main()[0m
+[0;32mI (10819) example: ... connected[0m
+[0;32mI (10819) example: ... socket send success[0m
+[0;32mI (10819) example: ... set socket receiving timeout success[0m
+[0;32mI (11509) example_connect: Got IPv6 event: Interface "example_netif_sta" address: 2a02:09b0:0040:a915:0270:07ff:fe17:c4b4, type: ESP_IP6_ADDR_IS_GLOBAL[0m
+[0;32mI (13039) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (13039) example: 10... [0m
+[0;32mI (14039) example: 9... [0m
+[0;32mI (15039) example: 8... [0m
+[0;32mI (16039) example: 7... [0m
+[0;32mI (17039) example: 6... [0m
+[0;32mI (18039) example: 5... [0m
+[0;32mI (19039) example: 4... [0m
+[0;32mI (20039) example: 3... [0m
+[0;32mI (21039) example: 2... [0m
+[0;32mI (22039) example: 1... [0m
+[0;32mI (23039) example: 0... [0m
+[0;32mI (24039) example: Starting again![0m
+[0;32mI (24039) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (24039) example: ... allocated socket[0m
+[0;32mI (24049) example: ... connected[0m
+[0;32mI (24049) example: ... socket send success[0m
+[0;32mI (24049) example: ... set socket receiving timeout success[0m
+[0;32mI (26159) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (26159) example: 10... [0m
+[0;32mI (27159) example: 9... [0m
+[0;32mI (28159) example: 8... [0m
+[0;32mI (29159) example: 7... [0m
+[0;32mI (30159) example: 6... [0m
+[0;32mI (31159) example: 5... [0m
+[0;32mI (32159) example: 4... [0m
+[0;32mI (33159) example: 3... [0m
+[0;32mI (34159) example: 2... [0m
+[0;32mI (35159) example: 1... [0m
+[0;32mI (36159) example: 0... [0m
+[0;32mI (37159) example: Starting again![0m
+[0;32mI (37159) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (37159) example: ... allocated socket[0m
+[0;32mI (37639) example: ... connected[0m
+[0;32mI (37639) example: ... socket send success[0m
+[0;32mI (37639) example: ... set socket receiving timeout success[0m
+[0;32mI (39869) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (39869) example: 10... [0m
+[0;32mI (40879) example: 9... [0m
+[0;32mI (41879) example: 8... [0m
+[0;32mI (42879) example: 7... [0m
+[0;32mI (43879) example: 6... [0m
+[0;32mI (44879) example: 5... [0m
+[0;32mI (45879) example: 4... [0m
+[0;32mI (46879) example: 3... [0m
+[0;32mI (47879) example: 2... [0m
+[0;32mI (48879) example: 1... [0m
+[0;32mI (49879) example: 0... [0m
+[0;32mI (50879) example: Starting again![0m
+[0;32mI (50879) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (50879) example: ... allocated socket[0m
+[0;32mI (51149) example: ... connected[0m
+[0;32mI (51149) example: ... socket send success[0m
+[0;32mI (51149) example: ... set socket receiving timeout success[0m
+[0;32mI (53389) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (53389) example: 10... [0m
+[0;32mI (54389) example: 9... [0m
+[0;32mI (55389) example: 8... [0m
+[0;32mI (56389) example: 7... [0m
+[0;32mI (57389) example: 6... [0m
+[0;32mI (58389) example: 5... [0m
+[0;32mI (59389) example: 4... [0m
+[0;32mI (60389) example: 3... [0m
+[0;32mI (61389) example: 2... [0m
+[0;32mI (62389) example: 1... [0m
+[0;32mI (63389) example: 0... [0m
+[0;32mI (64389) example: Starting again![0m
+[0;32mI (64389) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (64389) example: ... allocated socket[0m
+[0;32mI (64479) example: ... connected[0m
+[0;32mI (64479) example: ... socket send success[0m
+[0;32mI (64479) example: ... set socket receiving timeout success[0m
+[0;32mI (66709) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (66709) example: 10... [0m
+[0;32mI (67709) example: 9... [0m
+[0;32mI (68709) example: 8... [0m
+[0;32mI (69709) example: 7... [0m
+[0;32mI (70709) example: 6... [0m
+[0;32mI (71709) example: 5... [0m
+[0;32mI (72709) example: 4... [0m
+[0;32mI (73709) example: 3... [0m
+[0;32mI (74709) example: 2... [0m
+[0;32mI (75709) example: 1... [0m
+[0;32mI (76709) example: 0... [0m
+[0;32mI (77709) example: Starting again![0m
+[0;32mI (77709) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (77709) example: ... allocated socket[0m
+[0;32mI (77769) example: ... connected[0m
+[0;32mI (77769) example: ... socket send success[0m
+[0;32mI (77769) example: ... set socket receiving timeout success[0m
+[0;32mI (80019) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (80019) example: 10... [0m
+[0;32mI (81019) example: 9... [0m
+[0;32mI (82019) example: 8... [0m
+[0;32mI (83019) example: 7... [0m
+[0;32mI (84019) example: 6... [0m
+[0;32mI (85019) example: 5... [0m
+[0;32mI (86019) example: 4... [0m
+[0;32mI (87019) example: 3... [0m
+[0;32mI (88019) example: 2... [0m
+[0;32mI (89019) example: 1... [0m
+[0;32mI (90019) example: 0... [0m
+[0;32mI (91019) example: Starting again![0m
+[0;32mI (91019) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (91019) example: ... allocated socket[0m
+[0;32mI (91029) example: ... connected[0m
+[0;32mI (91029) example: ... socket send success[0m
+[0;32mI (91029) example: ... set socket receiving timeout success[0m
+[0;32mI (93119) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (93119) example: 10... [0m
+[0;32mI (94119) example: 9... [0m
+[0;32mI (95119) example: 8... [0m
+[0;32mI (96119) example: 7... [0m
+[0;32mI (97119) example: 6... [0m
+[0;32mI (98119) example: 5... [0m
+[0;32mI (99119) example: 4... [0m
+[0;32mI (100119) example: 3... [0m
+[0;32mI (101119) example: 2... [0m
+[0;32mI (102119) example: 1... [0m
+[0;32mI (103119) example: 0... [0m
+[0;32mI (104119) example: Starting again![0m
+[0;32mI (104119) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (104119) example: ... allocated socket[0m
+[0;32mI (104179) example: ... connected[0m
+[0;32mI (104179) example: ... socket send success[0m
+[0;32mI (104179) example: ... set socket receiving timeout success[0m
+[0;32mI (106439) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (106439) example: 10... [0m
+[0;32mI (107439) example: 9... [0m
+[0;32mI (108439) example: 8... [0m
+[0;32mI (109439) example: 7... [0m
+[0;32mI (110439) example: 6... [0m
+[0;32mI (111439) example: 5... [0m
+[0;32mI (112439) example: 4... [0m
+[0;32mI (113439) example: 3... [0m
+[0;32mI (114439) example: 2... [0m
+[0;32mI (115439) example: 1... [0m
+[0;32mI (116439) example: 0... [0m
+[0;32mI (117439) example: Starting again![0m
+[0;32mI (117439) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (117439) example: ... allocated socket[0m
+[0;32mI (117909) example: ... connected[0m
+[0;32mI (117909) example: ... socket send success[0m
+[0;32mI (117909) example: ... set socket receiving timeout success[0m
+[0;32mI (120359) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (120359) example: 10... [0m
+[0;32mI (121359) example: 9... [0m
+[0;32mI (122359) example: 8... [0m
+[0;32mI (123359) example: 7... [0m
+[0;32mI (124359) example: 6... [0m
+[0;32mI (125359) example: 5... [0m
+[0;32mI (126359) example: 4... [0m
+[0;32mI (127359) example: 3... [0m
+[0;32mI (128359) example: 2... [0m
+[0;32mI (129359) example: 1... [0m
+[0;32mI (130359) example: 0... [0m
+[0;32mI (131359) example: Starting again![0m
+[0;32mI (131359) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (131359) example: ... allocated socket[0m
+[0;32mI (131629) example: ... connected[0m
+[0;32mI (131629) example: ... socket send success[0m
+[0;32mI (131629) example: ... set socket receiving timeout success[0m
+[0;32mI (134079) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (134079) example: 10... [0m
+[0;32mI (135079) example: 9... [0m
+[0;32mI (136079) example: 8... [0m
+[0;32mI (137079) example: 7... [0m
+[0;32mI (138079) example: 6... [0m
+[0;32mI (139079) example: 5... [0m
+[0;32mI (140079) example: 4... [0m
+[0;32mI (141079) example: 3... [0m
+[0;32mI (142079) example: 2... [0m
+[0;32mI (143079) example: 1... [0m
+[0;32mI (144079) example: 0... [0m
+[0;32mI (145079) example: Starting again![0m
+[0;32mI (145079) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (145079) example: ... allocated socket[0m
+[0;32mI (145349) example: ... connected[0m
+[0;32mI (145349) example: ... socket send success[0m
+[0;32mI (145349) example: ... set socket receiving timeout success[0m
+[0;32mI (147809) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (147809) example: 10... [0m
+[0;32mI (148809) example: 9... [0m
+[0;32mI (149809) example: 8... [0m
+[0;32mI (150809) example: 7... [0m
+[0;32mI (151809) example: 6... [0m
+[0;32mI (152809) example: 5... [0m
+[0;32mI (153809) example: 4... [0m
+[0;32mI (154809) example: 3... [0m
+[0;32mI (155809) example: 2... [0m
+[0;32mI (156809) example: 1... [0m
+[0;32mI (157809) example: 0... [0m
+[0;32mI (158809) example: Starting again![0m
+[0;32mI (158809) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (158809) example: ... allocated socket[0m
+[0;32mI (158819) example: ... connected[0m
+[0;32mI (158819) example: ... socket send success[0m
+[0;32mI (158819) example: ... set socket receiving timeout success[0m
+[0;32mI (160919) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (160919) example: 10... [0m
+[0;32mI (161919) example: 9... [0m
+[0;32mI (162919) example: 8... [0m
+[0;32mI (163919) example: 7... [0m
+[0;32mI (164919) example: 6... [0m
+[0;32mI (165919) example: 5... [0m
+[0;32mI (166919) example: 4... [0m
+[0;32mI (167919) example: 3... [0m
+[0;32mI (168919) example: 2... [0m
+[0;32mI (169919) example: 1... [0m
+[0;32mI (170919) example: 0... [0m
+[0;32mI (171919) example: Starting again![0m
+[0;32mI (171919) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (171919) example: ... allocated socket[0m
+[0;32mI (171999) example: ... connected[0m
+[0;32mI (171999) example: ... socket send success[0m
+[0;32mI (171999) example: ... set socket receiving timeout success[0m
+[0;32mI (174429) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (174429) example: 10... [0m
+[0;32mI (175429) example: 9... [0m
+[0;32mI (176429) example: 8... [0m
+[0;32mI (177429) example: 7... [0m
+[0;32mI (178429) example: 6... [0m
+[0;32mI (179429) example: 5... [0m
+[0;32mI (180429) example: 4... [0m
+[0;32mI (181429) example: 3... [0m
+[0;32mI (182429) example: 2... [0m
+[0;32mI (183429) example: 1... [0m
+[0;32mI (184429) example: 0... [0m
+[0;32mI (185429) example: Starting again![0m
+[0;32mI (185429) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (185429) example: ... allocated socket[0m
+[0;32mI (185699) example: ... connected[0m
+[0;32mI (185699) example: ... socket send success[0m
+[0;32mI (185699) example: ... set socket receiving timeout success[0m
+[0;32mI (188359) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (188359) example: 10... [0m
+[0;32mI (189359) example: 9... [0m
+[0;32mI (190359) example: 8... [0m
+[0;32mI (191359) example: 7... [0m
+[0;32mI (192359) example: 6... [0m
+[0;32mI (193359) example: 5... [0m
+[0;32mI (194359) example: 4... [0m
+[0;32mI (195359) example: 3... [0m
+[0;32mI (196359) example: 2... [0m
+[0;32mI (197359) example: 1... [0m
+[0;32mI (198359) example: 0... [0m
+[0;32mI (199359) example: Starting again![0m
+[0;32mI (199359) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (199359) example: ... allocated socket[0m
+[0;32mI (199619) example: ... connected[0m
+[0;32mI (199629) example: ... socket send success[0m
+[0;32mI (199629) example: ... set socket receiving timeout success[0m
+[0;32mI (201879) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (201879) example: 10... [0m
+[0;32mI (202879) example: 9... [0m
+[0;32mI (203879) example: 8... [0m
+[0;32mI (204879) example: 7... [0m
+[0;32mI (205879) example: 6... [0m
+[0;32mI (206879) example: 5... [0m
+[0;32mI (207879) example: 4... [0m
+[0;32mI (208879) example: 3... [0m
+[0;32mI (209879) example: 2... [0m
+[0;32mI (210879) example: 1... [0m
+[0;32mI (211879) example: 0... [0m
+[0;32mI (212879) example: Starting again![0m
+[0;32mI (212879) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (212879) example: ... allocated socket[0m
+[0;32mI (213139) example: ... connected[0m
+[0;32mI (213139) example: ... socket send success[0m
+[0;32mI (213139) example: ... set socket receiving timeout success[0m
+[0;32mI (215389) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (215399) example: 10... [0m
+[0;32mI (216399) example: 9... [0m
+[0;32mI (217399) example: 8... [0m
+[0;32mI (218399) example: 7... [0m
+[0;32mI (219399) example: 6... [0m
+[0;32mI (220399) example: 5... [0m
+[0;32mI (221399) example: 4... [0m
+[0;32mI (222399) example: 3... [0m
+[0;32mI (223399) example: 2... [0m
+[0;32mI (224399) example: 1... [0m
+[0;32mI (225399) example: 0... [0m
+[0;32mI (226399) example: Starting again![0m
+[0;32mI (226399) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (226399) example: ... allocated socket[0m
+[0;32mI (226419) example: ... connected[0m
+[0;32mI (226419) example: ... socket send success[0m
+[0;32mI (226419) example: ... set socket receiving timeout success[0m
+[0;32mI (228509) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (228509) example: 10... [0m
+[0;32mI (229509) example: 9... [0m
+[0;32mI (230509) example: 8... [0m
+[0;32mI (231509) example: 7... [0m
+[0;32mI (232509) example: 6... [0m
+[0;32mI (233509) example: 5... [0m
+[0;32mI (234509) example: 4... [0m
+[0;32mI (235509) example: 3... [0m
+[0;32mI (236509) example: 2... [0m
+[0;32mI (237509) example: 1... [0m
+[0;32mI (238509) example: 0... [0m
+[0;32mI (239509) example: Starting again![0m
+[0;32mI (239509) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (239509) example: ... allocated socket[0m
+[0;32mI (239529) example: ... connected[0m
+[0;32mI (239529) example: ... socket send success[0m
+[0;32mI (239529) example: ... set socket receiving timeout success[0m
+[0;32mI (241609) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (241609) example: 10... [0m
+[0;32mI (242609) example: 9... [0m
+[0;32mI (243609) example: 8... [0m
+[0;32mI (244609) example: 7... [0m
+[0;32mI (245609) example: 6... [0m
+[0;32mI (246609) example: 5... [0m
+[0;32mI (247609) example: 4... [0m
+[0;32mI (248609) example: 3... [0m
+[0;32mI (249609) example: 2... [0m
+[0;32mI (250609) example: 1... [0m
+[0;32mI (251609) example: 0... [0m
+[0;32mI (252609) example: Starting again![0m
+[0;32mI (252609) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (252609) example: ... allocated socket[0m
+[0;32mI (252639) example: ... connected[0m
+[0;32mI (252639) example: ... socket send success[0m
+[0;32mI (252639) example: ... set socket receiving timeout success[0m
+[0;32mI (254719) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (254719) example: 10... [0m
+[0;32mI (255719) example: 9... [0m
+[0;32mI (256719) example: 8... [0m
+[0;32mI (257719) example: 7... [0m
+[0;32mI (258719) example: 6... [0m
+[0;32mI (259719) example: 5... [0m
+[0;32mI (260719) example: 4... [0m
+[0;32mI (261719) example: 3... [0m
+[0;32mI (262719) example: 2... [0m
+[0;32mI (263719) example: 1... [0m
+[0;32mI (264719) example: 0... [0m
+[0;32mI (265719) example: Starting again![0m
+[0;32mI (265719) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (265719) example: ... allocated socket[0m
+[0;32mI (265979) example: ... connected[0m
+[0;32mI (265979) example: ... socket send success[0m
+[0;32mI (265979) example: ... set socket receiving timeout success[0m
+[0;32mI (268229) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (268239) example: 10... [0m
+[0;32mI (269239) example: 9... [0m
+[0;32mI (270239) example: 8... [0m
+[0;32mI (271239) example: 7... [0m
+[0;32mI (272239) example: 6... [0m
+[0;32mI (273239) example: 5... [0m
+[0;32mI (274239) example: 4... [0m
+[0;32mI (275239) example: 3... [0m
+[0;32mI (276239) example: 2... [0m
+[0;32mI (277239) example: 1... [0m
+[0;32mI (278239) example: 0... [0m
+[0;32mI (279239) example: Starting again![0m
+[0;32mI (279239) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (279239) example: ... allocated socket[0m
+[0;32mI (279299) example: ... connected[0m
+[0;32mI (279299) example: ... socket send success[0m
+[0;32mI (279299) example: ... set socket receiving timeout success[0m
+[0;32mI (281749) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (281749) example: 10... [0m
+[0;32mI (282749) example: 9... [0m
+[0;32mI (283749) example: 8... [0m
+[0;32mI (284749) example: 7... [0m
+[0;32mI (285749) example: 6... [0m
+[0;32mI (286749) example: 5... [0m
+[0;32mI (287749) example: 4... [0m
+[0;32mI (288749) example: 3... [0m
+[0;32mI (289749) example: 2... [0m
+[0;32mI (290749) example: 1... [0m
+[0;32mI (291749) example: 0... [0m
+[0;32mI (292749) example: Starting again![0m
+[0;32mI (292749) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (292749) example: ... allocated socket[0m
+[0;32mI (293019) example: ... connected[0m
+[0;32mI (293019) example: ... socket send success[0m
+[0;32mI (293019) example: ... set socket receiving timeout success[0m
+[0;32mI (295469) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (295479) example: 10... [0m
+[0;32mI (296479) example: 9... [0m
+[0;32mI (297479) example: 8... [0m
+[0;32mI (298479) example: 7... [0m
+[0;32mI (299479) example: 6... [0m
+[0;32mI (300479) example: 5... [0m
+[0;32mI (301479) example: 4... [0m
+[0;32mI (302479) example: 3... [0m
+[0;32mI (303479) example: 2... [0m
+[0;32mI (304479) example: 1... [0m
+[0;32mI (305479) example: 0... [0m
+[0;32mI (306479) example: Starting again![0m
+[0;32mI (306479) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (306479) example: ... allocated socket[0m
+[0;32mI (306739) example: ... connected[0m
+[0;32mI (306739) example: ... socket send success[0m
+[0;32mI (306739) example: ... set socket receiving timeout success[0m
+[0;32mI (309199) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (309199) example: 10... [0m
+[0;32mI (310199) example: 9... [0m
+[0;32mI (311199) example: 8... [0m
+[0;32mI (312199) example: 7... [0m
+[0;32mI (313199) example: 6... [0m
+[0;32mI (314199) example: 5... [0m
+[0;32mI (315199) example: 4... [0m
+[0;32mI (316199) example: 3... [0m
+[0;32mI (317199) example: 2... [0m
+[0;32mI (318199) example: 1... [0m
+[0;32mI (319199) example: 0... [0m
+[0;32mI (320199) example: Starting again![0m
+[0;32mI (320199) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (320199) example: ... allocated socket[0m
+[0;32mI (320209) example: ... connected[0m
+[0;32mI (320209) example: ... socket send success[0m
+[0;32mI (320209) example: ... set socket receiving timeout success[0m
+[0;32mI (322299) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (322299) example: 10... [0m
+[0;32mI (323299) example: 9... [0m
+[0;32mI (324299) example: 8... [0m
+[0;32mI (325299) example: 7... [0m
+[0;32mI (326299) example: 6... [0m
+[0;32mI (327299) example: 5... [0m
+[0;32mI (328299) example: 4... [0m
+[0;32mI (329299) example: 3... [0m
+[0;32mI (330299) example: 2... [0m
+[0;32mI (331299) example: 1... [0m
+[0;32mI (332299) example: 0... [0m
+[0;32mI (333299) example: Starting again![0m
+[0;32mI (333299) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (333299) example: ... allocated socket[0m
+[0;32mI (333309) example: ... connected[0m
+[0;32mI (333309) example: ... socket send success[0m
+[0;32mI (333309) example: ... set socket receiving timeout success[0m
+[0;32mI (335409) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (335409) example: 10... [0m
+[0;32mI (336409) example: 9... [0m
+[0;32mI (337409) example: 8... [0m
+[0;32mI (338409) example: 7... [0m
+[0;32mI (339409) example: 6... [0m
+[0;32mI (340409) example: 5... [0m
+[0;32mI (341409) example: 4... [0m
+[0;32mI (342409) example: 3... [0m
+[0;32mI (343409) example: 2... [0m
+[0;32mI (344409) example: 1... [0m
+[0;32mI (345409) example: 0... [0m
+[0;32mI (346409) example: Starting again![0m
+[0;32mI (346409) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (346409) example: ... allocated socket[0m
+[0;32mI (346419) example: ... connected[0m
+[0;32mI (346419) example: ... socket send success[0m
+[0;32mI (346419) example: ... set socket receiving timeout success[0m
+[0;32mI (348519) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (348519) example: 10... [0m
+[0;32mI (349519) example: 9... [0m
+[0;32mI (350519) example: 8... [0m
+[0;32mI (351519) example: 7... [0m
+[0;32mI (352519) example: 6... [0m
+[0;32mI (353519) example: 5... [0m
+[0;32mI (354519) example: 4... [0m
+[0;32mI (355519) example: 3... [0m
+[0;32mI (356519) example: 2... [0m
+[0;32mI (357519) example: 1... [0m
+[0;32mI (358519) example: 0... [0m
+[0;32mI (359519) example: Starting again![0m
+[0;32mI (359519) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (359519) example: ... allocated socket[0m
+[0;32mI (359779) example: ... connected[0m
+[0;32mI (359779) example: ... socket send success[0m
+[0;32mI (359779) example: ... set socket receiving timeout success[0m
+[0;32mI (362039) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (362039) example: 10... [0m
+[0;32mI (363039) example: 9... [0m
+[0;32mI (364039) example: 8... [0m
+[0;32mI (365039) example: 7... [0m
+[0;32mI (366039) example: 6... [0m
+[0;32mI (367039) example: 5... [0m
+[0;32mI (368039) example: 4... [0m
+[0;32mI (369039) example: 3... [0m
+[0;32mI (370039) example: 2... [0m
+[0;32mI (371039) example: 1... [0m
+[0;32mI (372039) example: 0... [0m
+[0;32mI (373039) example: Starting again![0m
+[0;32mI (373039) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (373039) example: ... allocated socket[0m
+[0;32mI (373499) example: ... connected[0m
+[0;32mI (373509) example: ... socket send success[0m
+[0;32mI (373509) example: ... set socket receiving timeout success[0m
+[0;32mI (375959) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (375959) example: 10... [0m
+[0;32mI (376959) example: 9... [0m
+[0;32mI (377959) example: 8... [0m
+[0;32mI (378959) example: 7... [0m
+[0;32mI (379959) example: 6... [0m
+[0;32mI (380959) example: 5... [0m
+[0;32mI (381959) example: 4... [0m
+[0;32mI (382959) example: 3... [0m
+[0;32mI (383959) example: 2... [0m
+[0;32mI (384959) example: 1... [0m
+[0;32mI (385959) example: 0... [0m
+[0;32mI (386959) example: Starting again![0m
+[0;32mI (386959) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (386959) example: ... allocated socket[0m
+[0;32mI (387239) example: ... connected[0m
+[0;32mI (387239) example: ... socket send success[0m
+[0;32mI (387239) example: ... set socket receiving timeout success[0m
+[0;32mI (389479) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (389479) example: 10... [0m
+[0;32mI (390479) example: 9... [0m
+[0;32mI (391479) example: 8... [0m
+[0;32mI (392479) example: 7... [0m
+[0;32mI (393479) example: 6... [0m
+[0;32mI (394479) example: 5... [0m
+[0;32mI (395479) example: 4... [0m
+[0;32mI (396479) example: 3... [0m
+[0;32mI (397479) example: 2... [0m
+[0;32mI (398479) example: 1... [0m
+[0;32mI (399479) example: 0... [0m
+[0;32mI (400479) example: Starting again![0m
+[0;32mI (400479) example: DNS lookup succeeded. IP=192.168.55.64[0m
+[0;32mI (400479) example: ... allocated socket[0m
+[0;32mI (400489) example: ... connected[0m
+[0;32mI (400489) example: ... socket send success[0m
+[0;32mI (400489) example: ... set socket receiving timeout success[0m
+[0;32mI (402589) example: ... done reading from socket. Last read return=-1 errno=104.[0m
+[0;32mI (402589) example: 10... [0m
+[0;32mI (403589) example: 9... [0m
+[0;32mI (404589) example: 8... [0m
+[0;32mI (405589) example: 7... [0m
