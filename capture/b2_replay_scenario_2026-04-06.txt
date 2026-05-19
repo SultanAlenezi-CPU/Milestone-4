@@ -1,0 +1,25 @@
+=== FIRST REQUEST (expected 200) ===
+HTTP/1.0 200 OK
+Server: BaseHTTP/0.6 Python/3.13.5
+Date: Mon, 06 Apr 2026 22:32:06 GMT
+Content-Type: application/json
+Content-Length: 67
+
+{"device_id":"esp32_01","provisioning_status":"ok","run_id":"101"}
+
+=== REPLAY REQUEST (expected 401) ===
+HTTP/1.0 401 Unauthorized
+Server: BaseHTTP/0.6 Python/3.13.5
+Date: Mon, 06 Apr 2026 22:32:06 GMT
+
+{"error":"invalid or expired token"}
+
+=== SERVER LOG TAIL ===
+{"timestamp_utc": "2026-04-06T22:27:34.073220+00:00", "method": "POST", "path": "/provision", "run_id": "5", "device_id": "esp32_01", "token_known": true, "token_used_before": false, "token_valid": true, "status_code": 200}
+{"timestamp_utc": "2026-04-06T22:27:35.722747+00:00", "method": "POST", "path": "/provision", "run_id": "6", "device_id": "esp32_01", "token_known": true, "token_used_before": false, "token_valid": true, "status_code": 200}
+{"timestamp_utc": "2026-04-06T22:27:45.389657+00:00", "method": "POST", "path": "/provision", "run_id": "7", "device_id": "esp32_01", "token_known": true, "token_used_before": false, "token_valid": true, "status_code": 200}
+{"timestamp_utc": "2026-04-06T22:27:53.550066+00:00", "method": "POST", "path": "/provision", "run_id": "8", "device_id": "esp32_01", "token_known": true, "token_used_before": false, "token_valid": true, "status_code": 200}
+{"timestamp_utc": "2026-04-06T22:27:55.242474+00:00", "method": "POST", "path": "/provision", "run_id": "9", "device_id": "esp32_01", "token_known": true, "token_used_before": false, "token_valid": true, "status_code": 200}
+{"timestamp_utc": "2026-04-06T22:27:56.982018+00:00", "method": "POST", "path": "/provision", "run_id": "10", "device_id": "esp32_01", "token_known": true, "token_used_before": false, "token_valid": true, "status_code": 200}
+{"timestamp_utc": "2026-04-06T22:32:05.780116+00:00", "method": "POST", "path": "/provision", "run_id": "101", "device_id": "esp32_01", "token_known": true, "token_used_before": false, "token_valid": true, "status_code": 200}
+{"timestamp_utc": "2026-04-06T22:32:05.873809+00:00", "method": "POST", "path": "/provision", "run_id": "101_replay", "device_id": "esp32_01", "token_known": true, "token_used_before": true, "token_valid": false, "status_code": 401}
